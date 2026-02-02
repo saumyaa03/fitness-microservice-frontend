@@ -13,17 +13,9 @@ import {
 } from "react-router";
 import { setCredentials } from "./store/authSlice";
 import ActivityDetail from "./components/ActivityDetail";
-import ActivityForm from "./components/ActivityForm";
-import ActivityList from "./components/ActivityList"
+import ActivityPage from "./components/ActivityPage";
 
-const ActivitiesPage = () => {
-  return (
-    <Box sx={{ p: 2, border: '1px dashed grey' }}>
-     <ActivityForm />
-     <ActivityList />
-    </Box>
-  );
-}
+
 function App() {
 
   const{ token, tokenData, logIn, logOut, isAuthenticated } = useContext(AuthContext);
@@ -52,7 +44,7 @@ function App() {
           </Button>
 
           <Routes>
-            <Route path="/activities" element={<ActivitiesPage />}/>
+            <Route path="/activities" element={<ActivityPage />}/>
             <Route path="/activities/:id" element={<ActivityDetail />}/>
             <Route path="/" element={token ? <Navigate to="/activities" replace />
                                            : <div>Welcome! Please login</div>}/>
