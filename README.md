@@ -125,5 +125,3 @@ Backend:
 * Keycloak offloads authentication complexity
 * Backend remains focused on business logic
 * AI recommendation is decoupled from activity creation
-
-
