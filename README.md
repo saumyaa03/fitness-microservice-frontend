@@ -126,32 +126,3 @@ Backend:
 * Backend remains focused on business logic
 * AI recommendation is decoupled from activity creation
 
----
-
-## 8. Interview Talking Points (Use This)
-
-* “I use Keycloak for centralized authentication”
-* “JWT is validated at backend using Spring Security filters”
-* “I debugged token expiry issues by analyzing request flow”
-* “AI recommendations are fetched per activity and rendered contextually”
-* “Frontend and backend contracts are clearly separated”
-
----
-
-### ✅ Status
-
-* Backend & frontend integration: **Working**
-* AI feature: **Working**
-* Auth stability: **Needs improvement**
-* Registration: **Pending**
-* Dockerization: **Planned**
-
----
-
-If you want, next we can:
-
-* Add a **simple diagram**
-* Turn this into a **README for GitHub**
-* Or jump straight to **debugging the Keycloak logout issue using this doc**
-
-Just tell me 👍
