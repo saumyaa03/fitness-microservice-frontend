@@ -1,4 +1,4 @@
-# 📄 Authentication & Request Flow – Fitness App
+# Authentication & Request Flow – Fitness App
 
 ## 1. High-Level Architecture
 
@@ -37,7 +37,7 @@ Keycloak (Auth Server)
 5. User is redirected to protected pages
 ```
 
-**Important Notes**
+**Notes:**
 
 * Access token is used for all API calls
 * Token is attached via Axios interceptor
@@ -65,7 +65,7 @@ Backend:
 
 ---
 
-## 4. Token Handling (Critical Section)
+## 4. Token Handling
 
 ### Current Behavior
 
@@ -104,13 +104,13 @@ Backend:
 ## 6. Current Known Issues
 
 ```
-❗ Issues
+Issues
 - User session expires quickly
 - No refresh-token usage
 - No user registration UI
 - Activity + Recommendation fetched separately
 
-🛠 Planned Fixes
+Planned Fixes
 - Investigate Keycloak token lifespan
 - Add refresh-token handling or longer token TTL
 - Add Register page
