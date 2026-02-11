@@ -1,11 +1,10 @@
-# Fitness Microservices Platform -- Frontend
+# Fitness Microservices Platform - Frontend
 
 A React-based frontend for a distributed fitness tracking system built
 with Spring Boot microservices.\
 This application handles secure authentication via Keycloak and
 communicates with backend services using JWT-secured REST APIs.
 
-------------------------------------------------------------------------
 
 ## Overview
 
@@ -19,7 +18,6 @@ The frontend provides the user interface for:
 It interacts with a Spring Boot microservices backend and follows a
 clean, modular structure for maintainability.
 
-------------------------------------------------------------------------
 
 ## High-Level Architecture
 
@@ -41,7 +39,6 @@ clean, modular structure for maintainability.
 -   **Backend**: Validates JWT, enforces access control, executes
     business logic
 
-------------------------------------------------------------------------
 
 ## Tech Stack
 
@@ -53,7 +50,6 @@ clean, modular structure for maintainability.
 -   Spring Boot (Backend)
 -   Docker (Containerized deployment)
 
-------------------------------------------------------------------------
 
 ## Authentication Flow
 
@@ -74,7 +70,6 @@ to all protected API requests.
 The backend validates the token using Spring Security before processing
 requests.
 
-------------------------------------------------------------------------
 
 ## Features
 
@@ -85,13 +80,11 @@ requests.
 -   AI recommendation display
 -   Clean client-server separation
 
-------------------------------------------------------------------------
 
 ## Screenshots
 
     ![Dashboard](screenshots/dashboard.png)
 
-------------------------------------------------------------------------
 
 ## ▶️ How To Run Locally
 
@@ -111,7 +104,6 @@ requests.
 Make sure the backend services and Keycloak server are running before
 logging in.
 
-------------------------------------------------------------------------
 
 ## Notes
 
@@ -123,4 +115,3 @@ demonstrate:
 -   Clean architecture principles
 -   Scalable system design
 
-------------------------------------------------------------------------
